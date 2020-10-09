@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import withHelmet from '../../utils/withHelmet'
 
 function Story () {
   const { storyId } = useParams()
@@ -9,4 +10,4 @@ function Story () {
     </div>
   )
 }
-export default Story
+export default withHelmet('Walauck | Blog')(Story)
